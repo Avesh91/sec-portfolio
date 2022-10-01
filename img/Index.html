@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfillo</title>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <style>
+        @media screen and (min-width: 481px) {
+            .btn-download {
+                display: none;
+            }
+
+            * {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                outline: none;
+                border: none;
+                text-transform: capitalize;
+                transition: all .2s linear;
+            }
+
+            html {
+
+                overflow-x: hidden;
+                scroll-padding-top: 5.5rem;
+                scroll-behavior: smooth;
+            }
+            .t-intro{
+                margin-left: 50px;
+               
+            }
+         
+         
+            .name {
+                color: rgb(255, 153, 0);
+            }
+
+            .main-intro {
+                font: bolder;
+                font-size: 25px;
+                font-family: Gumela;
+
+            }
+
+            .intro {
+                margin-left: 50px;
+                margin-top: 60px;
+            }
+
+            .services {
+                margin-left: 50px;
+                margin-top: 400px;
+            }
+
+            .design {
+                border: 3px solid rgb(255, 153, 0);
+                padding-top: 15px;
+                border-radius: 20px;
+                width: 200px;
+                margin-left: 700px;
+                padding-left: 10px;
+                padding-right: 5px;
+                height: 200px;
+                margin-top: -300px;
+                cursor: pointer;
+            }
+
+            .developer {
+                padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: 10px;
+                padding-right: 5px;
+                height: 200px;
+                margin-left: 440px;
+                margin-top: -140px;
+                cursor: pointer;
+            }
+
+            .ui-ux {
+                padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: 10px;
+                padding-right: 5px;
+                height: 200px;
+                margin-left: 700px;
+                margin-top: -50px;
+                cursor: pointer;
+            }
+
+            .m-title {
+                color: rgb(255, 153, 0);
+                display: flex;
+                gap: 300px;
+                margin-left: 160px;
+            }
+
+            .title {
+                text-align: center;
+                align-items: center;
+            }
+
+            .about-service {
+                text-align: center;
+                align-items: center;
+            }
+
+            .main-title {
+                font: bolder;
+                font-size: 25px;
+                font-family: gill sans;
+            }
+
+            .data {
+                display: flex;
+            }
+
+            .progress-bar {
+                border: 2px solid;
+                border-radius: 100%;
+                height: 60px;
+                width: 50px;
+                padding-top: 8px;
+                padding-left: 10px;
+            }
+
+            .social {
+                display: flex;
+                gap: 20px;
+                margin-top: 100px;
+                cursor: pointer;
+            }
+
+            .github {
+                margin-left: 25px;
+            }
+
+            .insta {
+                margin-left: 25px;
+            }
+
+            .linkedin {
+                margin-left: 25px;
+            }
+
+            .btn {
+                color: white;
+                font-weight: bolder;
+            }
+
+            .container {
+
+                margin-left: -50px;
+                width: 100%;
+
+            }
+
+            .part-two {
+
+                margin-left: -50px;
+                width: 100%;
+
+            }
+
+            .emogies {
+                margin-left: 38px;
+                text-align: center;
+                align-items: center;
+                text-align: center;
+                margin-top: -20px;
+            }
+
+
+            .circle {
+                display: inline-block;
+                margin: 1em;
+            }
+
+            .circles-decimals {
+                font-size: .4em;
+            }
+
+            .client-pre {
+                width: 400px;
+            }
+
+            .clients {
+                margin-left: 60px;
+                display: flex;
+            }
+
+            .project-title {
+                text-align: center;
+                align-items: center;
+            }
+
+            .client-img {
+                border-radius: 140px;
+            }
+
+            .client-pre {
+                width: 600px;
+
+            }
+
+            .feedback-one {
+                text-align: center;
+                align-items: center;
+
+            }
+
+            .contact {
+                display: flex;
+                margin-top: 200px;
+            }
+
+            .t1 {
+                margin-bottom: 20px;
+                border: 2px solid rgb(255, 153, 0);
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .t2 {
+                margin-bottom: 20px;
+                border: 2px solid rgb(255, 153, 0);
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .message {
+                border: 2px solid rgb(255, 153, 0);
+                height: 80px;
+                padding-top: -50px;
+                border-radius: 10px;
+                padding-left: 10px;
+
+            }
+
+            .contact-two {
+                margin-left: 200px;
+
+            }
+
+            .Social-circle {
+                margin-left: -70px;
+                cursor: pointer;
+            }
+
+            .footer-img {
+                margin-bottom: -8px;
+            }
+
+            .footer-data {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                margin-top: 350px;
+                margin-left: 375px;
+            }
+
+            .footer {
+                background: url("wave.png");
+                height: 500px;
+                background-repeat: no-repeat;
+                position: relative;
+                margin-left: -80px;
+                margin-top: -200px;
+            }
+
+            .mail {
+                color: black;
+
+            }
+
+            .facebook {
+                margin-left: 17px;
+            }
+
+            .contact {
+                margin-left: 50px;
+            }
+
+            .feedback {
+                margin-left: 50px;
+            }
+
+            .mail {
+
+                margin-left: 50px;
+                margin-top: -100px;
+            }
+
+            .Social-circle {
+                position: relative;
+                animation: slider 5s linear;
+
+            }
+
+            .Social-circle {
+                content: '';
+
+
+            }
+
+            .Social-circle::before {
+                content: '';
+                position: absolute;
+
+            }
+
+            @keyframes slider {
+                form {
+                    transform: rotate(0deg);
+                    filter: hue-rotate(0deg);
+
+                }
+
+                to {
+                    transform: rotate(360deg);
+                    filter: hue-rotate(60deg);
+
+                }
+
+            }
+
+
+
+            .footer-data {
+                margin-left: 520px;
+            }
+
+            .skills {
+                margin-left: 300px;
+            }
+
+            .Social-circle {
+                margin-left: 200px;
+
+
+            }
+
+            .boy {
+                margin-left: 800px;
+                margin-top: -350px;
+            }
+
+            .thumb-box {
+                display: flex;
+                /* background-color: rgba(194, 194, 194, 0.623); */
+                box-shadow: rgba(128, 128, 128, 0.349) 4px 4px 4px 4px inset;
+                border-radius: 15px;
+                height: 100px;
+                width: 300px;
+                margin-left: 1000px;
+                padding-left: 30px;
+                cursor: pointer;
+
+            }
+
+            .crown-box {
+                display: flex;
+                /* background-color: rgba(194, 194, 194, 0.623); */
+                box-shadow: rgba(128, 128, 128, 0.349) 4px 4px 4px 4px inset;
+                border-radius: 15px;
+                height: 100px;
+                width: 300px;
+                margin-left: 500px;
+                margin-top: -500px;
+                padding-left: 30px;
+                cursor: pointer;
+            }
+
+            .glassesimoji {
+
+
+                height: 100px;
+                width: 100px;
+                margin-left: 1200px;
+                margin-top: -80px;
+
+            }
+
+            .btn:hover {
+                box-shadow: rgba(255, 230, 0, 0.295) 4px 4px 4px 4px;
+            }
+
+            .boy {
+                margin-top: -400px;
+            }
+
+            /* Animation */
+            section {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            section:nth-child(1) {
+                color: #e0ffff;
+            }
+
+            section:nth-child(2) {
+                color: #42455a;
+                background: #e0ffff;
+            }
+
+            section:nth-child(3) {
+                color: #e0ffff;
+            }
+
+            section:nth-child(4) {
+                color: #42455a;
+                background: #e0ffff;
+            }
+
+            section .container {
+                margin: 100px;
+            }
+
+            section h1 {
+                font-size: 3rem;
+                margin: 20px;
+            }
+
+            section h2 {
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            section .text-container {
+                display: flex;
+            }
+
+            section .text-container .text-box {
+                margin: 20px;
+                padding: 20px;
+                background: #00c2cb;
+            }
+
+            section .text-container .text-box h3 {
+                font-size: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+
+            }
+
+            .nav-link {
+                color: #ffc107;
+                font-weight: bolder;
+            }
+
+            .skills-part {
+                display: none;
+            }
+
+            .social {
+                margin-left: 50px;
+            }
+
+            .detail {
+                margin-left: -280px;
+                gap: 40px;
+                margin-top: -100px;
+            }
+
+            .mail {
+                margin-top: 1px;
+                margin-top: -80px;
+
+            }
+
+            .short-project {
+                display: none;
+            }
+
+            @media (max-width: 900px) {
+                /* section h1{
+
+    
+  }
+  section .text-container{
+    
+  } */
+            }
+
+            .reveal {
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 1s all ease;
+            }
+
+            .reveal.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .design {
+                margin-top: -400px;
+            }
+
+            .project-first {
+                margin-left: -800px;
+            }
+
+            .projects-box {
+                display: flex;
+            }
+
+            .services-box {
+                margin-bottom: 200px;
+            }
+
+            .Social-circle {
+                margin-top: -100px;
+            }
+
+            .clients {
+                margin-top: 200px;
+            }
+
+            .nav {
+                margin-left: 400px;
+                gap: 50px;
+            }
+
+            .navbar {
+
+                top: 0;
+            }
+
+            .nav-item:hover {
+                background-color: #ffc001;
+                color: rgb(255, 255, 255);
+                border-radius: 15px;
+            }
+
+            .nav-item:hover {
+                color: white;
+            }
+
+
+
+
+            /* media queries  */
+
+            @media (max-width:991px) {
+
+                html {
+                    font-size: 55%;
+                }
+
+                header {
+                    padding: 1rem 2rem;
+                }
+
+                section {
+                    padding: 2rem;
+                }
+
+
+            }
+        }
+
+        @media (max-width:768px) {
+
+            header .icons #menu-bars {
+                display: inline-block;
+            }
+
+            header .navbar {
+
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border-top: .1rem solid rgba(0, 0, 0, .2);
+                border-bottom: .1rem solid rgba(0, 0, 0, .2);
+                padding: 1rem;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            }
+
+            header .navbar.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            header .navbar a {
+                display: flex;
+                padding: 1.5rem;
+                margin: 1rem;
+                font-size: 59px;
+                background: #eee;
+            }
+
+
+
+            .home .home-slider .slide .content h3 {
+                font-size: 5rem;
+            }
+
+        }
+
+
+
+
+        @media screen and (max-width: 479px) {
+
+
+
+            .my-img {
+                margin-left: -800px;
+                margin-top: 400px;
+            }
+
+            .intro {
+                width: 400px;
+                margin-left: -1000px;
+            }
+
+            .main-intro {
+                font-size: 900px;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+
+
+
+            * {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                outline: none;
+                border: none;
+                text-transform: capitalize;
+                transition: all .2s linear;
+            }
+
+            html {
+
+                overflow-x: hidden;
+                scroll-padding-top: 5.5rem;
+                scroll-behavior: smooth;
+            }
+
+            .name {
+                color: rgb(255, 153, 0);
+            }
+
+            .main-intro {
+                font: bolder;
+                font-size: 80px;
+
+
+            }
+
+            .intro {
+                margin-left: 300px;
+                margin-top: 60px;
+            }
+
+            .services {
+                margin-left: 50px;
+                margin-top: 400px;
+            }
+
+
+            .title {
+                text-align: center;
+                align-items: center;
+            }
+
+            .about-service {
+                text-align: center;
+                align-items: center;
+            }
+
+            .main-title {
+                font: bolder;
+                font-size: 100px;
+                font-family: gill sans;
+
+            }
+
+            .data {
+                display: flex;
+            }
+
+            .progress-bar {
+                border: 2px solid;
+                border-radius: 100%;
+                height: 60px;
+                width: 50px;
+                padding-top: 8px;
+                padding-left: 10px;
+            }
+
+
+
+            .github {
+                margin-left: 25px;
+            }
+
+            .insta {
+                margin-left: 25px;
+            }
+
+            .linkedin {
+                margin-left: 25px;
+            }
+
+            .btn {
+                color: white;
+                font-weight: bolder;
+            }
+
+            .container {
+
+                margin-left: -50px;
+                width: 100%;
+
+            }
+
+            .part-two {
+
+                margin-left: -50px;
+                width: 100%;
+
+            }
+
+            .emogies {
+                margin-left: 38px;
+                text-align: center;
+                align-items: center;
+                text-align: center;
+                margin-top: -20px;
+            }
+
+
+            .circle {
+                display: inline-block;
+                margin: 1em;
+            }
+
+            .circles-decimals {
+                font-size: .4em;
+            }
+
+            .client-pre {
+                width: 400px;
+            }
+
+            .clients {
+                margin-left: 60px;
+                display: flex;
+            }
+
+            .project-title {
+                text-align: center;
+                align-items: center;
+            }
+
+            .client-img {
+                border-radius: 140px;
+            }
+
+            .client-pre {
+                width: 600px;
+
+            }
+
+            .feedback-one {
+                text-align: center;
+                align-items: center;
+
+            }
+
+            .contact {
+                display: flex;
+                margin-top: 200px;
+            }
+
+            .t1 {
+                margin-bottom: 20px;
+                border: 2px solid rgb(255, 153, 0);
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .t2 {
+                margin-bottom: 20px;
+                border: 2px solid rgb(255, 153, 0);
+                border-radius: 10px;
+                padding-left: 10px;
+            }
+
+            .message {
+                border: 2px solid rgb(255, 153, 0);
+                height: 80px;
+                padding-top: -50px;
+                border-radius: 10px;
+                padding-left: 10px;
+
+            }
+
+            .contact-two {
+                margin-left: 200px;
+
+            }
+
+            .Social-circle {
+                margin-left: -70px;
+                cursor: pointer;
+            }
+
+            .footer-img {
+                margin-bottom: -8px;
+            }
+
+            .footer-data {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                margin-top: 350px;
+                margin-left: 375px;
+            }
+
+            .footer {
+                background: url("wave.png");
+                height: 500px;
+                background-repeat: no-repeat;
+                position: relative;
+                margin-left: -80px;
+                margin-top: -200px;
+            }
+
+            .mail {
+                color: black;
+
+            }
+
+            .facebook {
+                margin-left: 17px;
+            }
+
+            .contact {
+                margin-left: 50px;
+            }
+
+            .feedback {
+                margin-left: 50px;
+            }
+
+            .mail {
+
+                margin-left: 50px;
+                margin-top: -100px;
+            }
+
+            .Social-circle {
+                position: relative;
+                animation: slider 5s linear;
+
+            }
+
+            .Social-circle {
+                content: '';
+
+
+            }
+
+            .Social-circle::before {
+                content: '';
+                position: absolute;
+
+            }
+
+            @keyframes slider {
+                form {
+                    transform: rotate(0deg);
+                    filter: hue-rotate(0deg);
+
+                }
+
+                to {
+                    transform: rotate(360deg);
+                    filter: hue-rotate(60deg);
+
+                }
+
+            }
+
+
+
+            .footer-data {
+                margin-left: 200px;
+            }
+
+            .skills {
+                margin-left: 300px;
+            }
+
+            .Social-circle {
+                margin-left: 200px;
+
+
+            }
+
+            .boy {
+                margin-left: 800px;
+                margin-top: -350px;
+            }
+
+            .thumb-box {
+                display: flex;
+                /* background-color: rgba(194, 194, 194, 0.623); */
+                box-shadow: rgba(128, 128, 128, 0.349) 4px 4px 4px 4px inset;
+                border-radius: 15px;
+                height: 100px;
+                width: 300px;
+                margin-left: -100x;
+                padding-left: 30px;
+                cursor: pointer;
+
+            }
+
+            .crown-box {
+                display: flex;
+                /* background-color: rgba(194, 194, 194, 0.623); */
+                box-shadow: rgba(128, 128, 128, 0.349) 4px 4px 4px 4px inset;
+                border-radius: 15px;
+                display: none;
+
+
+
+                cursor: pointer;
+            }
+
+            .glassesimoji {
+
+
+                height: 100px;
+                width: 100px;
+                margin-left: 750px;
+                margin-top: -880px;
+
+            }
+
+            .btn:hover {
+                box-shadow: rgba(255, 230, 0, 0.295) 4px 4px 4px 4px;
+            }
+
+            .boy {}
+
+            /* Animation */
+            section {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            section:nth-child(1) {
+                color: #e0ffff;
+            }
+
+            section:nth-child(2) {
+                color: #42455a;
+                background: #e0ffff;
+            }
+
+            section:nth-child(3) {
+                color: #e0ffff;
+            }
+
+            section:nth-child(4) {
+                color: #42455a;
+                background: #e0ffff;
+            }
+
+            section .container {
+                margin: 100px;
+            }
+
+            section h1 {
+                font-size: 3rem;
+                margin: 20px;
+            }
+
+            section h2 {
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            section .text-container {
+                display: flex;
+            }
+
+            section .text-container .text-box {
+                margin: 20px;
+                padding: 20px;
+                background: #00c2cb;
+            }
+
+            section .text-container .text-box h3 {
+                font-size: 30px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+
+
+
+
+            .skills {
+                margin-left: -420px;
+
+            }
+
+            .design {
+                border: 3px solid rgb(255, 153, 0);
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: -100px;
+                padding-right: 5px;
+                height: 150px;
+                margin-left: -100px;
+                margin-top: ;
+                cursor: pointer;
+
+
+
+            }
+
+            .developer {
+                padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: -100px;
+                padding-right: 5px;
+                height: 150px;
+
+                margin-top: 300px;
+                cursor: pointer;
+            }
+
+            .ui-ux {
+                /* padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                padding-right: 5px;
+                height: 150px;
+                float: left;
+                margin-top: 50px;
+                cursor: pointer;
+            margin-left: -20px; */
+                height: 150px;
+                margin-top: -350px;
+                margin-right: 20px;
+
+
+            }
+
+            .services-box {
+                width: 400px;
+            }
+
+            .main-title {
+                font-size: 200px;
+
+            }
+
+            .social {
+
+
+                margin-top: 100px;
+                cursor: pointer;
+            }
+
+            .Social-circle {
+                margin-left: -650px;
+                margin-top: 100px;
+
+            }
+
+            .client-pre {
+                width: 400px;
+                margin-left: -30px;
+            }
+
+            .project-title {
+                margin-left: -100px;
+            }
+
+            .project-title {
+                margin-left: 500px;
+            }
+
+            .clients {
+                margin-top: 400px;
+                font-size: 15px;
+
+            }
+
+            .Social-circle {
+                margin-left: -400px;
+                margin-top: 200px;
+
+            }
+
+            .intro {
+                margin-left: -1px;
+                font-weight: 900;
+                font-size: 20px;
+
+            }
+
+            .main-intro {
+                font-size: 11px;
+                width: 400px;
+            }
+
+            .thumb-box {
+                margin-right: 50px;
+            }
+
+            body {
+                overflow: hidden;
+            }
+
+            .btn {
+
+                font-size: 20px;
+                margin-left: -28px;
+                break-before: 15px;
+
+            }
+
+            .intro {
+                font-size: 20px;
+            }
+
+            .social {
+                margin-left: 40px;
+            }
+
+            .boy {
+                height: 300px;
+
+            }
+
+            .my-img {
+                padding-left: 70px;
+            }
+
+            .project-title {
+                margin-left: 50px;
+                margin-top: 100px;
+                font-size: 15px;
+            }
+
+            .main-intro {
+                margin-left: 80px;
+
+            }
+
+            .btn-t {
+                margin-left: 30px;
+            }
+
+            .skills-one {
+                display: none;
+            }
+
+            .developer-t {
+                padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: -100px;
+                padding-right: 5px;
+                height: 180px;
+                margin-left: 20px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+
+            .ui-ux-t {
+                padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: 60px;
+                height: 180px;
+                margin-top: 10px;
+                margin-left: 170px;
+                cursor: pointer;
+            }
+
+            .design-t {
+                padding-top: 15px;
+                border: 3px solid rgb(255, 153, 0);
+                border-radius: 20px;
+                width: 200px;
+                padding-left: 60px;
+                padding-right: 5px;
+                height: 180px;
+                margin-top: 10px;
+                margin-left: 100px;
+                cursor: pointer;
+                margin-bottom: 30px;
+
+            }
+
+            .skills-two {
+                padding-left: 60px;
+
+
+
+            }
+
+            .project-first {
+                width: 200px;
+            }
+
+            .project-two {
+                width: 100px;
+                height: 100px;
+            }
+
+            .services-box {
+                margin-top: -400px;
+
+            }
+
+            .clients {
+                margin-top: -10px;
+                margin-top: 280px;
+            }
+
+            .pre-t {
+                font-size: 15px;
+
+                width: 300px;
+
+
+
+
+
+            }
+
+            .intro {
+                margin-left: 50px;
+            }
+
+            .navbar {
+                display: block;
+                margin-left: 30px;
+                font-weight: bolder;
+                color: rgb(253, 173, 0);
+            }
+
+
+
+            /* motion animation */
+            .reveal {
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 1s all ease;
+            }
+
+            .reveal.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            .nav-item {
+                color: #ffc107;
+            }
+
+            .detail {
+                margin-left: -200px;
+                margin-top: -150px;
+            }
+
+            .mail {
+                font-size: 16px;
+                margin-left: -10px;
+                margin-top: -15px;
+                margin-top: -60px;
+            }
+
+            .m-title {
+                display: none;
+            }
+
+            .nav-item {
+                display: none;
+            }
+
+            .main-intro {
+                margin-left: -10px;
+                margin-left: 10px;
+            }
+
+            .btn-t {
+                display: none;
+            }
+
+            .services-box {
+                margin-left: -100px;
+            }
+
+            .services {
+                margin-left: -10px;
+
+                width: 350px;
+            }
+
+            .btn-download {
+                display: none;
+            }
+
+            .title {
+                margin-left: -30px;
+
+            }
+
+            .client-pre {
+                margin-left: -50px;
+            }
+
+            .projects {
+                display: inline;
+            }
+
+            .project-box {
+                display: none;
+            }
+
+            .project-two-m {
+
+                margin-top: 100px;
+
+            }
+
+            .project-three-m {
+
+                margin-top: 100px;
+                margin-left: -100px;
+                display: block;
+            }
+
+            .short-project {
+                display: block;
+                margin-left: -50px;
+            }
+
+            .p-h {
+                font-size: 40px;
+                margin-left: -10px;
+            }
+
+
+        
+
+            .name {
+                color: #ffc001;
+                font-weight: 3000;
+            }
+
+
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .client-pre {
+                width: 340px;
+                margin-left: 10px;
+                margin-left: -20px;
+
+            }
+
+            .clients {
+                margin-top: -50px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
+
+            .Social-circle {
+                margin-top: 300px;
+
+            }
+         
+        }
+        @media screen and (max-width: 380px) {
+            .pre-last{
+                width: 250px;
+            }
+            .client-pre{
+                width: 300px;
+            }
+            .pre-t{
+margin-left: -200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-ligth">
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#fat">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mdo">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#one">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#two">Brand & Client</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cv-resume.pdf">My Resume</a>
+            </li>
+
+
+
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <div class="main-intro">
+            <div class="intro">
+              
+                <div class="t-intro">
+       
+                    <h1 class="" id="into-t">Hy! I Am </h1>
+                    <h1 class="name" id="into-t">
+                        Avesh Ansari
+                    </h1>
+                </div>
+            
+            <p style="margin-left: 50px; " class="pre-t" id="fat">Frontend Developer with level of Fresher in <br> web
+                designing
+                and Development.
+                producting the Quality work.
+            </p>
+        </div>
+            <div class="btn-t">
+                <button type="button" class="btn btn-warning" id="btn btn-top btn-t" style="margin-left: 100px;">Hire
+                    Me</button>
+            </div>
+            <div class="social">
+                <div class="git">
+
+                    <img src="github.png" alt="" width="40px" class="github">
+                    <img src="linkedin.png" alt="" width="40px" class="linkedin">
+                    <img src="instagram.png" alt="" width="40px" class="insta">
+                </div>
+            </div>
+        </div>
+        <div class="my-img">
+            <!-- <img src="Vector1.png" alt="" class="vector-1" height="370px">
+    <img src="Vector2.png" alt="" class="vector-2" height="400px"> -->
+
+            <img src="model-img.svg" alt="" class="boy" height="400px">
+
+            <div class="thumb-box">
+                <img src="thumbup.png" alt="" class="crown" height="100px">
+                <h4 style="margin-top: 30px; margin-left: 10px;"> Best Design</h4>
+            </div>
+            <div class="crown-box">
+                <img src="crown.png" alt="" class="thumb" height="100px">
+                <h4 style="margin-top: 20px; margin-left: 30px;">Frontend Developer</h4>
+            </div>
+            <img src="glassesimoji.png" alt="" class="glassesimoji" height="100px">
+        </div>
+
+
+    </div>
+
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <div class="services-box" id="mdo" style="margin-left:50px ;">
+            <div class="services">
+                <div class="main-title"></div>
+
+                <h1 style="font-size: 40px; ">My Awesome</h1>
+                <h1 class="name" style="font-size: 40px;">services</h1>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing <br> suscipit veniam totam maxime provident ut
+                </p>
+
+                <button type="button" class="btn-download btn-warning" id="btn">Download CV</button>
+            </div>
+        </div>
+
+        <div class="skills-one">
+            <div class="skills">
+                <div class="reveal">
+                    <div class="design">
+                        <img src="heartemoji.png" alt="" width="70px" class="emogies">
+                        <h2 class="title">Design</h2>
+                        <p class="about-service">Figma</p>
+                    </div>
+
+                </div>
+
+                <div class="reveal">
+                    <div class="developer">
+                        <img src="glasses.png" alt="" width="70px" class="emogies">
+                        <h2 class="title">Developer</h2>
+
+                        <p class="about-service">Html,Css,Javascript.</p>
+
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <div class="ui-ux">
+                        <img src="humble.png" alt="" width="70px" class="emogies">
+                        <h2 class="title">
+                            Js Library
+                        </h2>
+                        <p class="about-service">React</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+    <div class="skills-part">
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div class="skills-two">
+                <div class="reveal">
+                    <div class="design-t">
+                        <img src="heartemoji.png" alt="" width="70px" class="emogies">
+                        <h2 class="title" style="font-weight: bolder;">Design</h2>
+                        <p class="about-service">
+                        <h2>Figma</h2>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="developer-t" style="width: 250px;" style='padding-left: 50px;'>
+                    <img src="glasses.png" alt="" width="70px" class="emogies">
+                    <h2 class="title" style="font-weight: bolder;">Developer</h2>
+
+                    <p class="about-service" style="margin-left: 30px;">
+                    <h2>Html,Css,Javascript</h2>
+                    </p>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="ui-ux-t" id="#mdo">
+                    <img src="humble.png" alt="" width="70px" class="emogies">
+                    <h2 class="title" style="margin-left: -40px; font-weight: bolder;">
+                        Js Library
+                    </h2>
+                    <p class="about-service">
+                    <h2>React</h2>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- projects -->
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <div class="projects" id="one">
+            <div class="project-title">
+                <h1 class="p-h">Recent <span class="name"> Projects </span></h1>
+                <!-- desktop  -->
+                <div class="project-box">
+                    <div class="m-title">
+                        <h3>Html,Css,Js</h3>
+                        <h3>Html,Css,Js</h3>
+                        <h3>React.js</h3>
+
+                    </div>
+
+
+                    <div class="project-first">
+                        <a href="https://avesh91.github.io/Anon-/"><img src="ecommerce.svg" alt="" height="200px"
+                                width="400px"></a>
+                    </div>
+                    <div class="project-two" style="margin-top: -200px;">
+                        <a href="https://avesh91.github.io/edueweb/"><img src="project-2.png" alt="" height="200px"
+                                width="400px"></a>
+                    </div>
+
+
+                    <div class="project-third" style="margin-top: -200px;margin-left:950px;">
+                        <a href="#"><img src="react.PNG" alt="" height="200px" width="400px"
+                                style="border-radius:15px;"></a>
+                    </div>
+
+
+                </div>
+
+                <!-- desktop close -->
+
+
+
+                <!-- mobile  -->
+                <div class="short-project">
+                    <!-- <div class="project-first-m"> -->
+                    <a href="https://avesh91.github.io/Anon-/"><img src="ecommerce.svg" alt="" height="150px"
+                            width="240px"></a><br><br>
+                    <!-- </div><br> -->
+                    <!-- <div class="project-two-m" style="margin-top: -200px;"> -->
+                    <a href="https://avesh91.github.io/edueweb/"><img src="project-2.png" alt="" height="150px"
+                            width="240px"></a><br><br>
+                    <br><br>
+
+
+                    <!-- <div class="project-third-m" style="margin-top: -200px;margin-left:950px;"> -->
+                    <a href="#" class="third-m"><img src="react.PNG" alt="" height="150px" width="200px"
+                            style="border-radius:15px; margin-left: -20px; position: relative;"></a>
+                    <!-- </div> -->
+
+
+                </div>
+                <!-- mobile close -->
+
+
+
+
+
+                <!-- </div> -->
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="clients">
+        <div class="about-clients">
+
+            <h1 style="font-size: 40px;">Work for All these </h1>
+            <h1 class="name" style="font-size: 40px;">
+                Brand & Clients
+            </h1>
+            <div class="pre-last">
+                <p class="client-pre">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia alias maiores
+                    eos
+                    doloribus quod ut nihil, voluptate sunt qui harum magnam nobis animi, eligendi perspiciatis libero!
+                    Exercitationem impedit pariatur explicabo.</p>
+            </div>
+            <button type="button" class="btn btn-warning" id="btn">Hire Me</button>
+
+
+        </div>
+
+
+
+        <div class="reveal">
+            <div class="Social-circle" id="two">
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+                    <img src="Social-Circle(2).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- <div class="feedback">
+        <div class="feedback-title">
+            <h1>Clients always get <h1 class="name"> Exceptional Work </h1> from me...</h1>
+        </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="contact">
+        <div class="contact-me">
+            <h1>Get in Touch</h1>
+            <h1 class="name">Contact me</h1>
+        </div>
+        <div class="contact-two"> -->
+    <!-- <input type="text" name="" placeholder="Name" class="t1" id=""><br>
+            <input type="email" placeholder="Email" class="t2"><br>
+            <input type="text" placeholder="Message" class="message"> -->
+
+    <!-- </div>
+    </div> -->
+
+
+    <div class="footer">
+
+        <!-- <img src="wave.png" alt="" height="375px" class="footer-img"> -->
+        <div class="main-footer">
+            <p>.</p>
+
+            <div class="footer-data" style="padding-top: 40px;">
+
+                <div class="insta">
+                    <img src="instagram.png" alt="" width="50px">
+                </div>
+                <div class="facebook">
+                    <img src="Facebook.png" alt="" width="50px">
+
+                </div>
+
+                <div class="github">
+                    <img src="github.png" alt="" width="50px">
+                </div>
+                <div class="detail">
+                    <h2 style="color: #ca9800;;">8889437834</h2><br><br><br>
+                    <h4 class="mail" style="color: #ca9800;">aveshansari7474@gmail.com</h4>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        // Circles.create({
+        //     id:           'circles-1',
+        //     value:        30,
+        //     radius:       60,
+        //     width:        10,
+        //     duration:     1,
+        //     colors:       ['#D3B6C6', '#4B253A']
+        // });
+
+
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+
+
+
+        //   image slider
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
+
+
+
+    </script>
+
+</body>
+<!--  -->
+
+</html>
